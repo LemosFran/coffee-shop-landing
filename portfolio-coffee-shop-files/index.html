@@ -19,11 +19,15 @@
         <div class="circulo"></div>
         <header>
             <a href="#" class="logo">Coffee</a>
-            <ul class="navBar">
-                <li><a href="#">Acerca de </a></li>
-                <li><a href="#">Nuestros productos </a></li>
-                <li><a href="#">Ubicación </a></li>
-                <li><a href="#">Contacto</a></li>
+            <div class="menuToggle active" onclick="toggleMenu()">
+                
+            </div>
+            
+            <ul class="navBar active">
+                <li><a href="#" onclick="toggleMenu()">Acerca de </a></li>
+                <li><a href="#" onclick="toggleMenu()">Nuestros productos </a></li>
+                <li><a href="#" onclick="toggleMenu()">Ubicación </a></li>
+                <li><a href="#" onclick="toggleMenu()">Contacto</a></li>
                 
             </ul>
         </header>
@@ -51,6 +55,7 @@
 
     </section> 
 
+<script src="script.js" ></script>
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
