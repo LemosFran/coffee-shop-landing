@@ -331,9 +331,9 @@ header .navBar li a:hover{
 
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
     section{
-        padding: 30px;
+        padding: 100px;
         
     }
 
@@ -359,5 +359,10 @@ header .navBar li a:hover{
         transform: translateY(20px);
     }
 
-    
+    header{
+        width: 200px;
+    }
+    body{
+        background-color: aqua;
+    }
 }
