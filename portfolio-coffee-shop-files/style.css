@@ -331,32 +331,33 @@ header .navBar li a:hover{
 
 }
 
-/* Estilos generales */
-
-/* Estilos para dispositivos con ancho máximo de 400px (teléfonos móviles) */
-@media screen and (max-width: 730px) {
-    section {
-        padding: 20px; /* Reducimos el relleno para dispositivos más pequeños */
+@media screen and (max-width: 400px){
+    section{
+        padding: 30px;
+        
     }
 
-    header .logo {
-        font-size: 1.2rem; /* Reducimos el tamaño del logo para dispositivos más pequeños */
+    header .logo{
+        font-size: 1.5rem;
     }
 
-    .circulo {
-        clip-path: circle(150px at center bottom); /* Reducimos el tamaño del círculo para que se ajuste mejor en dispositivos móviles */
+    .circulo{
+        clip-path: circle(400px at center bottom);
     }
 
-    .container {
-        padding-left: 10px; /* Añadimos un poco de relleno a la izquierda para evitar que el contenido esté pegado al borde en dispositivos móviles */
+    .container{
+        padding-left: 0px;
+
     }
 
-    .redes-sociales {
-        left: 30%; /* Ajustamos la posición de las redes sociales para que se vean mejor en dispositivos móviles */
-        transform: translateY(10px); /* Movemos un poco hacia arriba */
+    .redes-sociales{
+        left: 35%;
+        transform: translateY(20px);
     }
 
-    .copyright {
-        transform: translateY(10px); /* Movemos un poco hacia arriba */
+    .copyright{
+        transform: translateY(20px);
     }
+
+    
 }
