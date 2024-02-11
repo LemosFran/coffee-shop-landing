@@ -352,4 +352,12 @@ header .navBar li a:hover{
     .copyright{
         transform: translateY(20px);
     }
+
+    .circulo{
+        display: none;
+    }
+
+    .redes-sociales{
+        width: 20px;
+    }
 }
