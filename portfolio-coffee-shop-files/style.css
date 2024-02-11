@@ -6,6 +6,10 @@
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #bba694;
     /* overflow-x: hidden; */
@@ -137,7 +141,7 @@ header .navBar li a:hover{
 }
 
 .container .imgBox img{
-    width: 420px;
+    width: 480px;
 }
 
 /*Circulo*/
@@ -145,7 +149,7 @@ header .navBar li a:hover{
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateY(200px);
+    /* transform: translateY(200px); */
     background: #9b7239;
     clip-path: circle(650px at right 750px);
     width: 100%;
@@ -208,6 +212,7 @@ header .navBar li a:hover{
 
 }
 
+    /*Laptops*/
 @media screen and (max-width: 992px){
     section{
         padding: 80px;
@@ -240,16 +245,16 @@ header .navBar li a:hover{
 
     .circulo{
         clip-path: circle(550px at right 750px);
-        height: 100vh;
+        
     }
 
     .copyright{
         left: 400px;
-        bottom: -50px;
+        /* bottom: -50px; */
     }
 
     .redes-sociales{
-        bottom: -45px;
+        /* bottom: -45px; */
     }
 
 }
@@ -267,6 +272,24 @@ header .navBar li a:hover{
 
     header .navBar{
         display: none;
+    }
+
+    header .navBar.active{
+        width: 100%;
+        height: calc(100% - 40px);
+        position: fixed;
+        top: 80px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1;
+    }
+
+    header .navBar li a{
+        font-size: 1.2em;
+        line-height: 2;
     }
 
     .menuToggle{
@@ -287,30 +310,7 @@ header .navBar li a:hover{
         cursor: pointer;
     }    
 
-    header .navBar {
-        display: none;
-    }
-
-    header .navBar.active{
-        width: 100%;
-        height: calc(100% - 40px);
-        position: fixed;
-        top: 80px;
-        left:0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background: #bba694;
-        z-index: 1;
-
-    }
-
-    header .navBar li a{
-        font-size: 1.2em;
-        line-height: 2;
-    }
-
+   
     .container{
         flex-direction: column;
         gap: 70px;
@@ -319,7 +319,26 @@ header .navBar li a:hover{
     .container .tituloBox{
         text-align: center;
     }
+
+    .container .tituloBox h2{
+        font-size: 2em;
+    }
     
+
+    .container .tituloBox p{
+        font-size: 1.5em;
+    }
+
+    .container .imgBox{
+        width: 450px;
+    }
+
+    .container .imgBox img{
+        width: 350px;
+        padding-right: 50px;
+        margin-top: 0;
+    }
+
     .circulo{
         clip-path: circle(400px at center bottom);
     }
@@ -330,7 +349,7 @@ header .navBar li a:hover{
 
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 400px){
     section{
         padding: 30px;
     }
@@ -346,10 +365,11 @@ header .navBar li a:hover{
 
     .redes-sociales{
         left: 35%;
-        transform: translateY(20px);
+        /* transform: translateY(20px); */
+        padding: 0px;
     }
 
-    .copyright{
+    /* .copyright{
         transform: translateY(20px);
     }
 
@@ -359,5 +379,5 @@ header .navBar li a:hover{
 
     .redes-sociales{
         width: 20px;
-    }
+    } */
 }
